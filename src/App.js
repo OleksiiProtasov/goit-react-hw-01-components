@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+import userCardInf from "./task/userCard.json";
+import userPanel from "./components/userCard";
+
+// import userStat from './task/statistical-data.json';
+
+// import userFriend from './task/friends.json';
+
+// import userBuys from './task/transactions.json';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <userPanel>
+      name={userCardInf.name}
+      tag={userCardInf.tag}
+      location={userCardInf.location}
+      avatar={userCardInf.avatar}
+      stats={userCardInf.stats}
+    </userPanel>
+    /* <statistic title='Upload Stars' stats='userStat'/> */
+    /* <friends>
+        friends='userFriend'
+      </friends>
+      <buys>
+        buys='userBuys'
+      </buys> */
   );
 }
 

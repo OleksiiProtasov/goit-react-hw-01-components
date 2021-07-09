@@ -1,31 +1,32 @@
-import "./App.css";
+// import "./App.css";
+import React from "react";
 
-import userCardInf from "./task/userCard.json";
-import userPanel from "./components/userCard";
+import { name, tag, location, avatar, stats } from "./data/userCard.json";
+import { UserCard } from "./components/userCard/UserCard";
 
-// import userStat from './task/statistical-data.json';
+import userStat from "./data/statistical-data.json";
+import UserStatistic from "./components/statistic/UserStatistic";
 
-// import userFriend from './task/friends.json';
+import userFriend from "./data/friends.json";
+import UserFriends from "./components/friends/userFriends";
 
-// import userBuys from './task/transactions.json';
+import transactions from "./data/transactions.json";
+import TransactionHistory from "./components/transactions/userCash";
 
-function App() {
-  return (
-    <userPanel>
-      name={userCardInf.name}
-      tag={userCardInf.tag}
-      location={userCardInf.location}
-      avatar={userCardInf.avatar}
-      stats={userCardInf.stats}
-    </userPanel>
-    /* <statistic title='Upload Stars' stats='userStat'/> */
-    /* <friends>
-        friends='userFriend'
-      </friends>
-      <buys>
-        buys='userBuys'
-      </buys> */
-  );
-}
+const App = () => (
+  <>
+    <UserCard
+      avatar={avatar}
+      name={name}
+      alt={name}
+      tag={tag}
+      location={location}
+      stats={stats}
+    />
+    <UserStatistic title="Upload stats" statistic={userStat} />
+    <UserFriends dataFriends={userFriend} />
+    <TransactionHistory cashItems={transactions} />;
+  </>
+);
 
 export default App;

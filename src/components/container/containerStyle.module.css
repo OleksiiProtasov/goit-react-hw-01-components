@@ -1,0 +1,14 @@
+.Container {
+  display: flex;
+
+  margin: 0 auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  width: 60vw;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding-inline-start: 0;
+}

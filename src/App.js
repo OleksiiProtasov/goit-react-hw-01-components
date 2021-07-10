@@ -1,5 +1,6 @@
-// import "./App.css";
+import "./App.css";
 import React from "react";
+import Container from "./components/container/Container";
 
 import { name, tag, location, avatar, stats } from "./data/userCard.json";
 import { UserCard } from "./components/userCard/UserCard";
@@ -15,17 +16,21 @@ import TransactionHistory from "./components/transactions/userCash";
 
 const App = () => (
   <>
-    <UserCard
-      avatar={avatar}
-      name={name}
-      alt={name}
-      tag={tag}
-      location={location}
-      stats={stats}
-    />
-    <UserStatistic title="Upload stats" statistic={userStat} />
-    <UserFriends dataFriends={userFriend} />
-    <TransactionHistory cashItems={transactions} />;
+    <Container>
+      <UserCard
+        avatar={avatar}
+        name={name}
+        alt={name}
+        tag={tag}
+        location={location}
+        stats={stats}
+      />
+      <UserStatistic title="Upload stats" statistic={userStat} />
+      <UserFriends dataFriends={userFriend} />
+    </Container>
+    <Container>
+      <TransactionHistory cashItems={transactions} />;
+    </Container>
   </>
 );
 

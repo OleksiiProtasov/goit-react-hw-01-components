@@ -1,0 +1,33 @@
+.block {
+  display: inline-block;
+  text-align: center;
+  outline: 5px solid grey;
+  width: 200px;
+  height: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  padding: 5px;
+}
+
+.img {
+  width: 10vw;
+}
+
+.stats {
+  padding-inline-start: 0;
+  margin: 0;
+  width: 100%;
+  padding: 10px;
+}
+
+.StatItem {
+  text-decoration: none;
+  list-style: none;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 65px;
+  max-height: 65px;
+  border: 1px solid teal;
+}

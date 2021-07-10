@@ -1,26 +1,27 @@
 import React from "react";
 import PropTypes from "prop-types";
 import defLogo from "./defAva.jpg";
+import style from "../userCard/userCardStyle.module.css";
 
 export const UserCard = ({ name, tag, location, avatar, stats }) => (
   <>
-    <div>
+    <div className={style.block}>
       <div>
-        <img src={avatar} alt="Аватар пользователя" />
+        <img className={style.img} src={avatar} alt="Аватар пользователя" />
         <p>{name} </p>
         <p>{tag} </p>
         <p>{location} </p>
       </div>
       <ul>
-        <li>
+        <li className={style.StatItem}>
           <span>followers:</span>
           <span>{stats.followers}</span>
         </li>
-        <li>
+        <li className={style.StatItem}>
           <span>Views:</span>
           <span>{stats.views}</span>
         </li>
-        <li>
+        <li className={style.StatItem}>
           <span>Likes:</span>
           <span>{stats.likes}</span>
         </li>

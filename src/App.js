@@ -29,7 +29,7 @@ const App = () => (
       <UserFriends dataFriends={userFriend} />
     </Container>
     <Container>
-      <TransactionHistory cashItems={transactions} />;
+      <TransactionHistory cashItems={transactions} />
     </Container>
   </>
 );

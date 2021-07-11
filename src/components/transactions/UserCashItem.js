@@ -1,11 +1,12 @@
 import React from "react";
+import style from "../transactions/userTransactions.module.css";
 
 const TableItem = ({ id, type, amount, currency }) => (
-  <tbody key={id}>
-    <tr key={id}>
-      <th>{type}</th>
-      <th>{amount}</th>
-      <th>{currency}</th>
+  <tbody className={style.tbodyList}>
+    <tr key={id} className={style.trList}>
+      <th className={style.thList}>{type}</th>
+      <th className={style.thList}>{amount}</th>
+      <th className={style.thList}>{currency}</th>
     </tr>
   </tbody>
 );

@@ -1,14 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
 import UCI from "./UserCashItem";
+import style from "../transactions/userTransactions.module.css";
 
 const Transaction = ({ cashItems }) => (
   <table>
     <thead>
       <tr>
-        <th>"Type"</th>
-        <th>"Amount"</th>
-        <th>"Currency"</th>
+        <th className={style.th}>Type</th>
+        <th className={style.th}>Amount</th>
+        <th className={style.th}>Currency</th>
       </tr>
     </thead>
     {cashItems.map((item) => (

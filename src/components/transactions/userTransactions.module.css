@@ -1,0 +1,21 @@
+.th {
+  height: 30px;
+  width: 150px;
+  border: 3px solid rgba(31, 30, 29, 0.007);
+  border-radius: 3%;
+  background-color: rgba(144, 144, 202, 0.349);
+  color: rgb(71, 6, 250);
+}
+
+.tbodyList {
+  background-color: rgba(95, 158, 160, 0.664);
+  color: aliceblue;
+}
+.tbodyList:nth-child(2n) {
+  background-color: rgba(245, 245, 220, 0.521);
+  color: rgb(68, 66, 64);
+}
+
+/* .trList {
+  background-color: cadetblue;
+} */

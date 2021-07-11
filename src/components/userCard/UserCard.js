@@ -6,23 +6,23 @@ import style from "../userCard/userCardStyle.module.css";
 export const UserCard = ({ name, tag, location, avatar, stats }) => (
   <>
     <div className={style.block}>
-      <div>
+      <div className={style.blockBig}>
         <img className={style.img} src={avatar} alt="Аватар пользователя" />
-        <p>{name} </p>
-        <p>{tag} </p>
-        <p>{location} </p>
+        <h3>{name} </h3>
+        <p className={style.p}>@{tag} </p>
+        <p className={style.p}>{location} </p>
       </div>
-      <ul>
+      <ul className={style.userStats}>
         <li className={style.StatItem}>
-          <span>followers:</span>
+          <span className={style.titleItem}>followers:</span>
           <span>{stats.followers}</span>
         </li>
         <li className={style.StatItem}>
-          <span>Views:</span>
+          <span className={style.titleItem}>Views:</span>
           <span>{stats.views}</span>
         </li>
         <li className={style.StatItem}>
-          <span>Likes:</span>
+          <span className={style.titleItem}>Likes:</span>
           <span>{stats.likes}</span>
         </li>
       </ul>

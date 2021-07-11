@@ -1,23 +1,31 @@
 .block {
   display: inline-block;
   text-align: center;
-  outline: 5px solid grey;
-  width: 200px;
-  height: 350px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 15px;
-  padding: 5px;
+  border: 2px solid rgb(235, 0, 0);
+  /* width: 250px;
+  height: 370px; */
+  border-radius: 3%;
+  overflow: hidden;
+}
+.blockBig {
+  padding: 5px 5px 5px 0;
 }
 
 .img {
   width: 10vw;
+  margin-bottom: 10px;
 }
 
-.stats {
+.p {
+  color: rgb(173, 177, 176);
+}
+.userStats {
+  display: flex;
+  justify-content: space-around;
+  border-top: 2px solid rgb(235, 0, 0);
   padding-inline-start: 0;
   margin: 0;
-  width: 100%;
+
   padding: 10px;
 }
 
@@ -27,7 +35,16 @@
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 65px;
+  width: 60px;
   max-height: 65px;
-  border: 1px solid teal;
+  /* border: 1px solid teal; */
+}
+
+.titleItem {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.userStats {
+  background-color: rgba(51, 228, 184, 0.329);
 }

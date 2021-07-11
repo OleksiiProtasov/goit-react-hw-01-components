@@ -1,0 +1,35 @@
+.statBlock {
+  text-align: center;
+}
+
+.ulBlock {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.liBlock {
+  border: 2px solid rgba(255, 68, 0, 0.575);
+  width: 55px;
+  height: 55px;
+  border-radius: 20%;
+  background-color: rgba(194, 233, 23, 0.185);
+}
+.liBlock:not(:last-child) {
+  margin-right: 5px;
+}
+
+.block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+}
+
+.label {
+  composes: block;
+}
+
+.percentage {
+  composes: block;
+}

@@ -19,7 +19,7 @@ const Transaction = ({ cashItems }) => (
 );
 
 Transaction.prototTypes = {
-  UCI: PropTypes.arrayOf(
+  cashItems: PropTypes.arrayOf(
     PropTypes.shape({
       type: PropTypes.string.isRequired,
       currency: PropTypes.string.isRequired,
